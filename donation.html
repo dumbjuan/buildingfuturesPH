@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Building Futures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #f8fafc;
+    color: #333;
+    line-height: 1.7;
+}
+
+body {
+    margin-top: 150px;
+}
+
+h1 {
+    color: #1E73BE;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.tagline {
+    color: #4a4a4a;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 30px;
+}
+
+h2 {
+    color: #1E73BE;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.donation-box {
+    background-color: #ffffff;
+    border: 2px solid #dbe9ff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.donation-form {
+    background-color: #ffffff;
+    border: 2px solid #dbe9ff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.donation-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background-color: #f1f7ff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #1E73BE;
+    font-weight: 600;
+    flex: 1;
+    margin: 8px;
+    min-width: 150px;
+}
+
+.progress-container {
+    background-color: #e3edff;
+    border-radius: 10px;
+    height: 18px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #1E73BE;
+    width: 18%;
+    border-radius: 10px;
+}
+
+.donate-btn {
+    background-color: #1E73BE;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.donate-btn:hover {
+    background-color: #145aa0;
+}
+
+
+@media (max-width: 600px) {
+    .donation-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.donation-form {
+    background-color: #ffffff;
+    border: 2px solid #dbe9ff;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.donation-form h2 {
+    color: #1E73BE;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin: 20px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.amount-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.custom-amount {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dbe9ff;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #1E73BE;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #1E73BE;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #145aa0;
+}
+
+.donation-info {
+    max-width: 850px;
+    margin: 60px auto;
+    background: #ffffff;
+    border: 1px solid #e3edff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.04);
+    line-height: 1.8;
+}
+
+.donation-info h3 {
+    color: #1E73BE;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.donation-info em {
+    color: #555;
+}
+
+.donation-info ul {
+    text-align: left;
+    margin: 15px 0 25px 20px;
+}
+
+.donation-info li {
+    margin-bottom: 10px;
+}
+
+.donation-info strong {
+    color: #1E73BE;
+}
+
+@media (max-width: 700px) {
+    .donation-form, .donation-info {
+        padding: 25px;
+    }
+
+    .donation-form h2 {
+        font-size: 24px;
+    }
+}
+.contact-section {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #ffffff;
+    border: 1px solid #e3edff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.04);
+    line-height: 1.8;
+    text-align: center;
+}
+
+.contact-section h3 {
+    color: #1E73BE;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-section strong {
+    color: #1E73BE;
+}
+
+.contact-section a {
+    color: #1E73BE;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+
+<header>
+    <nav class="navbar">
+        <a href="Index.html" class="logo">
+            <img src="images/header.png" alt="logo">
+        </a>
+
+        <ul class="links">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="communityspotlight.html">Community Spotlight</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="blogs.html">Blogs & News</a></li>
+            <li><a href="donation.html">Donate</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<body>
+    <section>
+        <h2>Transforming Education, Building a Nation.</h2>
+        <p>For every Filipino child, a future defined by opportunity, not by crisis. Join us in championing SDG 4: Quality Education for the Philippines.</p>
+
+        <h2>Your Way to Build a Bright Future</h2>
+        <p>At Building Futures, we empower passionate individuals like you to make a difference. Your donation helps provide access to quality education for marginalized and underprivileged children, ensuring that every child, no matter their background can dream.</p>
+
+        <div class="donation-box">
+            <div class="donation-stats">
+                <div class="stat">₱3,562.00<br><small>Raised</small></div>
+                <div class="stat">124<br><small>Donations</small></div>
+                <div class="stat">₱20,000.00<br><small>Goal</small></div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+
+
+        </div>
+
+        <p>Every contribution, big or small brings us closer to a Philippines where every child can read, learn, and build a future of hope.</p>
+        <div class="donation-form">
+            <h2>Donation Form</h2>
+            
+            <form action="thanks.html"> 
+                <div class="form-group">
+                    <center>
+                        <label>Type of donation</label>
+                        <input type="radio" name="type" value="one-time"> One-time only
+                        <input type="radio" name="type" value="monthly"> Monthly
+                    </center>
+                </div>
+                
+                <div class="form-group">
+                    <label>Amount</label>
+                    <div class="amount-options">
+                        <label><input type="checkbox" name="amount" value="1000"> ₱1,000.00</label>
+                        <label><input type="checkbox" name="amount" value="3500"> ₱3,500.00</label>
+                        <label><input type="checkbox" name="amount" value="5000"> ₱5,000.00</label>
+                    </div>
+                    <input type="text" placeholder="Or enter any amount" name="custom_amount" class="custom-amount">
+                </div>
+
+                <input type="submit" value="Donate" class="submit-btn" />
+
+            </form>
+        </div>
+
+        <div class="donation-info">
+            <h3>Where Do Your Donations Go?</h3>
+            <em>Did you know?</em>
+            <ul>
+                <li>9 out of 10 Filipino children under age 10 cannot read and understand a simple story.</li>
+                <li>The Philippines ranks among the lowest-performing countries in global learning assessments.</li>
+                <li>From classroom shortages to under-supported teachers, millions of learners are left behind.</li>
+            </ul>
+            <p><strong>Your donation directly supports:</strong></p>
+            <ul>
+                <li>Children in marginalized communities across Davao City, including Indigenous Peoples (IPs), students with disabilities (PWD), and learners with limited access to education.</li>
+                <li>Scholars and learners who need better tools, resources, and support systems to thrive.</li>
+            </ul>
+            <p><strong>Your donation directly supports:</strong></p>
+            <ul>
+                <li><b>Early Childhood Foundations-</b> Combating malnutrition and improving access to high-quality early childhood care and development.</li>
+                <li><b>Education for Marginalized Communities & IPs-</b> In collaboration with partner non-organizations such as Kalayag, providing learning materials and educational resources to IP students.</li>
+                <li><b>Quality Learning & Resources-</b>  Supplying schools and students with tools for effective learning.</li>
+                <li><b>Teacher Empowerment & System Strengthening-</b> Building capacity, collaboration, and national action to improve the state of education in the Philippines.</li>
+            </ul>
+        </div>
+    </section>
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p><strong>Phone</strong><br>(+63) 94 560 22375</p>
+            <p><strong>Email</strong><br><a href="mailto:buildingfutures.inc@gmail.com">buildingfutures.inc@gmail.com</a></p>
+        </div>
+
+        <div class="right-column">
+            <p class="copyright">© 2025 By Building Futures Inc.</p>
+
+<div class="social-section">
+    <div class="follow-row"> 
+        <p class="copyright">Follow us!</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

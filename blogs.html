@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs & News | Building Futures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+body {
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #1a237e;
+    font-size: 2.5rem;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    justify-content: center;
+    padding: 0 20px 50px 20px; 
+}
+
+.blog-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; 
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+.blog-card h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 0 15px 10px 15px;
+    color: #1a237e;
+    text-align: left;
+}
+
+p {
+    padding: 13px;
+    font-size: 5;
+    margin-top: -10px;
+}
+
+.blog-card .source-date {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0 15px 15px 15px;
+    text-align: left;
+    flex-grow: 1; 
+}
+
+.blog-card .read-more-link {
+    font-weight: bold;
+    color: #4a90e2;
+    padding: 0 15px 15px 15px; 
+    margin-top: auto;
+    text-align: left;
+    transition: color 0.2s;
+}
+
+.blog-card .read-more-link:hover {
+    color: #357bd8;
+    text-decoration: underline;
+}
+
+@media (max-width: 1050px) {
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="Index.html" class="logo">
+                <img src="images/header.png" alt="logo">
+            </a>
+
+            <ul class="links">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="communityspotlight.html">Community Spotlight</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="blogs.html">Blogs & News</a></li>
+                <li><a href="donation.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="blog-section">
+        <h1>LATEST BLOGS AND NEWS</h1>
+        <div class="blog-container">
+            <a href="blogsample.html" class="blog-card">
+                <img src="images/article 1.jpg" alt="Group of friends smiling">
+                <h3>CITY ANTI-DRUG ABUSE COUNCIL HEIGHTENS YOUTH EDUCATION VS ILLEGAL DRUGS</h3>
+                <p>Davao City Gov PH - CIO Admin <br>March 21, 2025</p>
+            </a>
+
+            <a href="blogsample2.html" class="blog-card">
+                <img src="images/article 2.jpg" alt="Friends taking a group photo">
+                <h3>FREE EDUCATION ACCESS, QUALITY ENHANCEMENT</h3>
+                <p>SunStar - Rojean Grace G. Patumbon <br>March 11, 2024</p>
+            </a>
+
+            <a href="blogsample3.html" class="blog-card">
+                <img src="images/article 3.jpg" alt="Community group event">
+                <h3>E-LIBRARY SEEN TO PROVIDE FREE BOOKS, EDUCATIONAL MATERIALS</h3>
+                <p>Davao Today <br>Maria Patricia C. Borromeo <br>November 21, 2016 </p>
+            </a>
+
+            <a href="blogsample.html" class="blog-card">
+                <img src="images/article 4.jpg" alt="Community group event">
+                <h3>E-LIBRARY SEEN TO PROVIDE FREE BOOKS, EDUCATIONAL MATERIALS</h3>
+                <p>Davao Today <br>Maria Patricia C. Borromeo <br>November 21, 2016 </p>
+            </a>
+
+            <a href="blogsample2.html" class="blog-card">
+                <img src="images/article 5.jpg" alt="Community group event">
+                <h3>CITY ANTI-DRUG ABUSE COUNCIL HEIGHTENS YOUTH EDUCATION VS ILLEGAL DRUGS</h3>
+                <p>Davao City Gov PH - CIO Admin <br>March 21, 2025 </p>
+            </a>
+
+            <a href="blogsample.html" class="blog-card">
+                <img src="images/article 6.jpg" alt="Community group event">
+                <h3>E-LIBRARY SEEN TO PROVIDE FREE BOOKS, EDUCATIONAL MATERIALS</h3>
+                <p>Davao Today <br>Maria Patricia C. Borromeo <br>November 21, 2016 </p>
+            </a>
+
+            <a href="blogsample2.html" class="blog-card">
+                <img src="images/article 7.jpg" alt="Community group event">
+                <h3>FREE EDUCATION ACCESS, QUALITY ENHANCEMENT</h3>
+                <p>Sunstar - Rojean Grace G. Patumbon <br>March 11, 2024 </p>
+            </a>
+
+            <a href="blogsample.html" class="blog-card">
+                <img src="images/article 8.jpg" alt="Community group event">
+                <h3>E-LIBRARY SEEN TO PROVIDE FREE BOOKS, EDUCATIONAL MATERIALS</h3>
+                <p>Davao Today <br>Maria Patricia C. Borromeo <br>November 21, 2016 </p>
+            </a>
+
+            <a href="blogsample2.html" class="blog-card">
+                <img src="images/article 9.jpg" alt="Community group event">
+                <h3>CITY COLLEGE OF DAVAO PROVIDES FREE EDUCATION FOR FIVE YEARS NOW</h3>
+                <p>Davao City Gov PH - CIO Admin <br>January 24, 2025 </p>
+            </a>
+
+            <a href="blogsample3.html" class="blog-card">
+                <img src="images/article 10.jpg" alt="Community group event">
+                <h3>DAVAO CITY TARGETS 22K CHILDREN FOR EDUCATIONAL AID PROGRAM</h3>
+                <p>Davao City Gov PH - Administrator <br>June 17, 2020 </p>
+            </a>
+        </div>
+    </section>
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p><strong>Phone</strong><br>(+63) 94 560 22375</p>
+            <p><strong>Email</strong><br><a href="mailto:buildingfutures.inc@gmail.com">buildingfutures.inc@gmail.com</a></p>
+        </div>
+
+        <div class="right-column">
+            <p class="copyright">© 2025 By Building Futures Inc.</p>
+
+<div class="social-section">
+    <div class="follow-row"> 
+        <p class="copyright">Follow us!</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer | Building Futures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<style>
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 150px auto 10px auto;
+    background-color: #f8fafc;
+    color: #333;
+    line-height: 1.7;
+}
+
+h1 {
+    color: #1E73BE;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.tagline {
+    color: #4a4a4a;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #1E73BE;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border: 2px solid #dbe9ff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dbe9ff;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    border-color: #1E73BE;
+    outline: none;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.checkbox-group {
+    margin: 15px 0;
+}
+
+.submit-btn {
+    background-color: #1E73BE;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #145aa0;
+}
+
+.contact-section {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #ffffff;
+    border: 1px solid #e3edff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.04);
+    text-align: center;
+}
+
+.contact-section h3 {
+    color: #1E73BE;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    color: #1E73BE;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 25px;
+    }
+}
+</style>
+</head>
+
+<header>
+    <nav class="navbar">
+        <a href="Index.html" class="logo">
+            <img src="images/header.png" alt="logo">
+        </a>
+
+        <ul class="links">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="communityspotlight.html">Community Spotlight</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="blogs.html">Blogs & News</a></li>
+            <li><a href="donation.html">Donate</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<body>
+
+    <section>
+        <h2>Volunteer Sign-up Form</h2>
+
+        <div class="form-container">
+            <form>
+                <label>Full Name:</label>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+
+                <label>Contact Information:</label>
+                <input type="tel" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+
+                <div class="radio-group">
+                    <label>Are you already enrolled in any non-profit organisation?</label>
+                    <label><input type="radio" name="org" value="yes"> Yes</label>
+                    <label><input type="radio" name="org" value="no"> No</label>
+                </div>
+
+                <label>When can you start?</label>
+                <input type="date" required>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox" required> I'm not a robot</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Volunteer</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="contact-section">
+        <h3>Get in Touch</h3>
+        <p><strong>Phone:</strong> (+63) 94 560 22375</p>
+        <p><strong>Email:</strong> <a href="mailto:buildingfutures.inc@gmail.com">buildingfutures.inc@gmail.com</a></p>
+    </div>
+
+
+<footer style="margin-bottom: -10px;">
+    <div class="footer-content">
+        <div class="contact-info">
+            <p><strong>Phone</strong><br>(+63) 94 560 22375</p>
+            <p><strong>Email</strong><br><a href="mailto:buildingfutures.inc@gmail.com">buildingfutures.inc@gmail.com</a></p>
+        </div>
+
+        <div class="right-column">
+            <p class="copyright">© 2025 By Building Futures Inc.</p>
+
+<div class="social-section">
+    <div class="follow-row"> 
+        <p class="copyright">Follow us!</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

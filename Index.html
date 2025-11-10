@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Futures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<style>
+main {
+    text-align: center;
+}
+
+.vmg-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 90%; 
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.vmg-box {
+    flex: 1;
+    min-width: 280px;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.vmg-title {
+    background-color: #4C5E98; 
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 0; 
+    text-align: center; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.vmg-content {
+    padding: 20px;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+
+.com-section {
+    text-align: center;
+    margin-top: 80px;
+}
+
+body {
+    margin-top: -60px;
+}
+
+.com-grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    max-width: 1200px; 
+    margin: 40px auto; 
+    align-items: start; 
+    justify-content: center;
+}
+
+.com-member1 {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #d9e6f5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.com-member1 img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #1E73BE;
+}
+
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1400px;
+    margin: 0 auto; 
+    justify-content: center;
+    padding: 0 20px 50px 20px; 
+}
+
+.blog-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; 
+    color: #000;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.blog-card h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 0 15px 10px 15px;
+    color: #1a237e;
+    text-align: left;
+}
+
+.p1 {
+    padding: 13px;
+    font-size: 5;
+    margin-top: -10px;
+}
+
+.blog-card .source-date {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0 15px 15px 15px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.blog-card .read-more-link {
+    font-weight: bold;
+    color: #4a90e2;
+    padding: 0 15px 15px 15px; 
+    margin-top: auto;
+    text-align: left;
+    transition: color 0.2s;
+}
+
+.blog-card .read-more-link:hover {
+    color: #357bd8;
+    text-decoration: underline;
+}
+
+@media (max-width: 1050px) {
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 20px;
+    }
+}
+
+</style>
+
+
+</head>
+
+
+
+<header>
+    <nav class="navbar">
+        <a href="Index.html" class="logo">
+            <img src="images/header.png" alt="logo">
+        </a>
+
+        <ul class="links">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="communityspotlight.html">Community Spotlight</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="blogs.html">Blogs & News</a></li>
+            <li><a href="donation.html">Donate</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<body>
+
+
+<div class="hero-header" style="margin-top: -10px;">
+    <center>
+    <img src="images/header 1.png" alt="Children with hands raised in a classroom">
+    <div class="hero-content" style="margin-top: 60px;">
+        <p class="pre-heading">FREE AND EQUAL</p>
+        <h1>EDUCATION FOR ALL</h1>
+    </center>
+    </div>
+</div>
+
+<div class="cta-bar">
+    <div class="cta-content-wrapper"> <p class="cta-message">TAKE ACTION AND HELP US GROW!</p>
+        <a href="donation.html" class="cta-button">DONATE</a>
+    </div>
+</div>
+
+</section>
+<br>
+
+<main>
+    
+<center>
+
+    <img src="images/header.png" width="50%" style="margin: 40px;">
+
+    <h1 id="who">Who are we?</h1>
+<p class="text" style="padding-left: 400px; padding-right: 400px;"> <b><i>Building Futures</i></b> is an advocacy campaign that fights for equal access to education among children and youth. Our purpose is to help address the pressing and long-time issue in society – the lack of access to education. By doing so, we aim to establish a community-centered platform through a website that advocates for education among the underprivileged and out-of-school youth and children. We desire to unite the students, parents, educators, and the government to have a commonality in fighting for what the children and youth deserve — and that is a bright and secure future. </p>
+
+<br>
+<table border="1">
+<div class="vmg-container"> <div class="vmg-box">
+            <h2 class="vmg-title">Vision</h2>
+            <div class="vmg-content">
+                A world where every child, regardless of background, status, ethnicity, and age, is given equal access
+                and opportunity to education that fosters quality, excellence, and lifelong learning. At its core, we
+                envision to empower all the marginalized and underprivileged children around the world by providing
+                them high-standard education for their brighter future. Through this campaign advocacy, the children will
+                be given space and opportunity to grow, learn, and contribute purposefully to the society with the
+                education they will acquire.
+            </div>
+        </div>
+
+        <div class="vmg-box">
+            <h2 class="vmg-title">Mission</h2>
+            <div class="vmg-content">
+                We pour out our dedication to continuously advocate for the children in need of
+                equal and inclusive learning space and protect every child’s right to education. We aim to partner with
+                local government units and non-government organizations to assist us in reaching and fulfilling
+                our cause to hone and develop children that will be deeply embedded in upright principles,
+                honorable values, and ethical conduct.
+            </div>
+        </div>
+
+        <div class="vmg-box">
+            <h2 class="vmg-title">Goals</h2>
+            <div class="vmg-content">
+                As a non-profit organization, we intend and strive to secure long-term partners and sponsors who are
+                committed with us to collaborate and fulfill our mission for the children. Part of our goal is to unify all
+                essential stakeholders such as students, educators, parents, and the government and gather willing
+                volunteers to raise awareness about the current situation and fight with us on our cause.
+            </div>
+        </div>
+
+    </div>
+
+</center>
+
+<br>
+</section>
+
+<div class="cta-bar">
+    <div class="cta-content-wrapper"> <p class="cta-message">Join us and be part of the movement!</p>
+        <a href="volunteer.html" class="cta-button">Volunteer</a>
+    </div>
+</div>
+<br><br>
+
+
+<h1 id="spotlight">COMMUNITY SPOTLIGHT</h1>
+
+<br>
+    <section class="com-section" style="margin-top: -10%;">
+    <div class="com-grid1">
+        
+        <div class="com-member1">
+            <img src="images/commspot 1.png" alt="AFFLIP logo">
+            <h3>Australian Foundation for Fostering Learning in the Philippines (AFFLIP)</h3>
+
+        </div>
+
+        <div class="com-member1">
+            <img src="images/commspot 2.png" alt="DANA Foundation logo">
+            <h3>DANA Foundation, Inc.</h3>
+        </div>
+
+        <div class="com-member1">
+            <img src="images/commspot 3.png" alt="Rise for Education Davao logo">
+            <h3>Rise for Education Davao (R4E)</h3>
+        </div>
+        
+
+    </div>
+    </section>
+
+
+<section class="blog-section">
+    <h1 style="margin-bottom: 30px; margin-top: -100px;">LATEST BLOGS AND NEWS</h1>
+    <div class="blog-container">
+        <a href="blogsample.html" class="blog-card">
+            <img src="images/article 1.jpg" alt="Group of friends smiling">
+            <h3>CITY ANTI-DRUG ABUSE COUNCIL HEIGHTENS YOUTH EDUCATION VS ILLEGAL DRUGS</h3>
+            <p class="p1">Davao City Gov PH - CIO Admin <br>March 21, 2025</p>
+        </a>
+
+        <a href="blogsample2.html" class="blog-card">
+            <img src="images/article 2.jpg" alt="Friends taking a group photo">
+            <h3>FREE EDUCATION ACCESS, QUALITY ENHANCEMENT</h3>
+            <p class="p1">SunStar - Rojean Grace G. Patumbon <br>March 11, 2024</p>
+        </a>
+
+        <a href="blogsample3.html" class="blog-card">
+            <img src="images/article 3.jpg" alt="Community group event">
+            <h3>E-LIBRARY SEEN TO PROVIDE FREE BOOKS, EDUCATIONAL MATERIALS</h3>
+            <p class="p1">Davao Today <br>Maria Patricia C. Borromeo <br>November 21, 2016 </p>
+        </a>
+    </div>
+    </section>
+
+
+
+</main>
+
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p><strong>Phone</strong><br>(+63) 94 560 22375</p>
+            <p><strong>Email</strong><br><a href="mailto:buildingfutures.inc@gmail.com">buildingfutures.inc@gmail.com</a></p>
+        </div>
+
+        <div class="right-column">
+            <p class="copyright">© 2025 By Building Futures Inc.</p>
+
+<div class="social-section">
+    <div class="follow-row"> 
+        <p class="copyright">Follow us!</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      background-color: #f8fafc;
+      color: #333;
+      line-height: 1.7;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+ body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+ }
+
+ .navbar .logo {
+    display: flex;
+    gap: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    align-items: center;
+ }
+
+.logo img {
+    width: 350px;
+    margin-top: 0;
+}
+
+    header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: #B1DFF6;
+        padding: 0px 0 0px 0;
+        z-index: 1000;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+.navbar .links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-top: 30px;
+
+}
+
+.navbar .links a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: 0.3s;
+    color: #324DA4;
+}
+
+.navbar .links a:hover {
+    color: #0059ff;
+}
+
+
+
+    h1 {
+      color: #1E73BE;
+      font-size: 36px;
+      margin: 10px 0;
+    }
+
+    .tagline {
+      color: #4a4a4a;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+
+
+    .active {
+    color: rgb(167, 240, 255);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+    section {
+padding: 130px 120px 40px 120px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+      color: #1E73BE;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-left: 60px;
+      color: #333;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .team-section {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .team-member {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid #d9e6f5;
+      width: 250px;
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #1E73BE;
+    }
+
+    .team-member h3 {
+      margin-top: 10px;
+      color: #1E73BE;
+      font-size: 18px;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-grid .team-member:nth-last-child(-n+2) {
+      grid-column: span 1;
+    }
+
+    .text {
+              text-align: justify;  
+      font-size: 17px;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 950px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1E73BE;
+      color: white;
+      padding: 15px 0;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 30px 20px;
+      }
+    }
+
+
+footer {
+    /* Set the background to the blue color shown in your image */
+    background-color: #B1DFF6; /* Using a darker blue for contrast */
+    /* Set text color to white for contrast */
+    color: #324DA4; 
+    padding: 50px 0;
+    /* Optional: Add a subtle border line at the top */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.contact-info a {
+    /* Set the email link color to match the rest of the text */
+    color: #324DA4;
+    text-decoration: underline; /* Optional: keep underline to show it's a link */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Pushes content to the far left and far right */
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; /* Centers the whole wrapper */
+    padding: 0 40px; 
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns all content in this column to the right */
+}
+
+/* Space between follow us and icons */
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center "Follow us" and the icons relative to each other */
+    margin-top: 20px;
+}
+
+.follow-row {
+    display: flex;
+    align-items: center; /* Vertically centers the text and the icons */
+    gap: 15px; /* Adds space between "Follow us!" and the first icon */
+}
+
+/* Ensure the "Follow us!" text doesn't have unnecessary default margins */
+.social-section p {
+    margin: 0; 
+}
+
+
+.copyright {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.social-icons a {
+    /* Define the size and shape */
+    display: inline-flex; /* Use flex to center the icon */
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Width of the square */
+    height: 30px; /* Height of the square */
+    border: 1px solid #324DA4; /* White border around the icon */
+    border-radius: 4px; /* Slightly rounded corners for a "round square" look */
+    /* border-radius: 50%; /* Use 50% for a perfect circle */
+
+    /* Color and spacing */
+    color: #324DA4; 
+    font-size: 16px; /* Icon size */
+    margin-left: 10px; /* Space between icons */
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #324da426; /* Fill the square with white on hover */
+    color: #1E73BE; /* Change icon color to blue on hover */
+}
+
+  .hero-header {
+    /* Sets up the container to position the content over the image */
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust height as needed (e.g., 60% of viewport height) */
+    overflow: hidden; /* Ensures image doesn't bleed outside */
+}
+
+.hero-header img {
+    /* Ensures the image covers the entire container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Important: crops the image to cover the area without distorting */
+    filter: brightness(0.6); /* **Creates the Dark Overlay:** makes the image darker */
+}
+
+.hero-content {
+    /* Positions the text block exactly in the center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text must be white to stand out against the dark image */
+    font-family: Arial, sans-serif; /* Use your desired font */
+    padding: 20px;
+}
+
+.pre-heading {
+    /* Style for the smaller, top text ("FREE AND EQUAL") */
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.hero-content h1 {
+    /* Style for the main, bold text ("EDUCATION FOR ALL") */
+    font-size: 4em; /* Make it large and prominent */
+    font-weight: 800; /* Extra bold */
+    margin: 0;
+    line-height: 1.1;
+    color: white;
+}
+
+
+
+.cta-bar {
+    /* Outer Container: Centers the wrapper horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensures the *group* is centered */
+    background-color: #A9D0F5;
+    padding: 20px 40px; 
+}
+
+.cta-content-wrapper {
+    /* Inner Container: Lays out the items next to each other */
+    display: flex;
+    align-items: center;
+    gap: 30px; /* <--- CRUCIAL: Controls the space between the text and button */
+}
+
+.cta-message {
+    /* Ensure no margins are interfering */
+    margin: 0;
+    font-weight: 800;
+    font-size: 30px;
+    color: #384A7D;
+    white-space: nowrap;
+    /* ... other text styles ... */
+}
+
+.cta-button {
+    /* Button Base Styling (Anchor tag styled as a button) */
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4C5E98; /* Darker blue/purple button color (adjust if needed) */
+    color: white; /* White text for contrast */
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px; /* Optional: adds slight rounding to the corners */
+    text-transform: uppercase;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+    background-color: #384A7D; /* Slightly darker shade on hover */
+}
